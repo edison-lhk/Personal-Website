@@ -58,6 +58,11 @@ body {
   display: none;
 }
 
+#navbar .container nav .mobile-menu-exit {
+  -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
 #hero-section {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.5)), to(rgba(50, 50, 50, 0.6))), url("../images/hero-background.jpg");
   background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.6)), url("../images/hero-background.jpg");
@@ -182,7 +187,7 @@ body {
 }
 
 #about-section .container .about-details .right .view-resume-btn:hover {
-  color: var(--lightblue);
+  color: var(--navy);
   background: white;
 }
 
@@ -251,6 +256,56 @@ body {
 
 #navbar.active-nav .container nav ul li a {
   color: #0e0e0e;
+}
+
+#navbar.open-menu {
+  background: transparent;
+  position: absolute;
+}
+
+#navbar.open-menu .container .logo, #navbar.open-menu .container .mobile-menu {
+  display: none;
+}
+
+#navbar.open-menu .container nav {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  background: var(--lightgray);
+}
+
+#navbar.open-menu .container nav .mobile-menu-exit {
+  float: right;
+  cursor: pointer;
+  margin: 2em 2em;
+}
+
+#navbar.open-menu .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 87vh;
+  text-align: center;
+}
+
+#navbar.open-menu .container nav ul li {
+  list-style-type: none;
+  margin: 4vh auto;
+}
+
+#navbar.open-menu .container nav ul li a {
+  font-size: 5vw;
+  color: #0e0e0e;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 900px) {
