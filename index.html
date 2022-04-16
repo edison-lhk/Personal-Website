@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Edison Liem</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    
+    <body>
+        <div id="navbar" class="navbar">
+            <div class="container">
+
+                <a class="logo" href="index.html"><img class="lightning-image" src="images/lightning.png" alt="Lightning Image">Edison<a>
+                
+                <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+                <nav>
+                    <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Exit Navigation">
+
+                    <ul>
+                        <li><a href="#hero-section">Home</a></li>
+                        <li><a href="#about-section">About</a></li>
+                        <li><a href="#experience-section">Experience</a></li>
+                        <li><a href="#projects-section">Projects</a></li>
+                        <li><a href="#contact-section">Contact</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+
+        <section id="hero-section">
+            <div class="container">
+
+                <div class="text-container">
+                    <p>Hello,</p>
+                    <h1>I'm Edison Liem</h1>
+                    <h2>Software Engineering & Data Science</h2>
+
+                    <a class="email-icon" href="mailto:edisonliem417@gmail.com" target="_blank">
+                        <ion-icon name="mail"></ion-icon>
+                    </a>
+                    <a class="github-icon" href="https://github.com/edison-lhk" target="_blank">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a class="linkedin-icon" href="https://www.linkedin.com/in/edison-liem-99ba3a235/" target="_blank">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-section">
+            <div class="container">
+                <div class="about-title">
+                    <h3>About Me</h3>
+                </div>
+                <div class="about-details">
+                    <div class="left">
+                        <img src="images/personal-photo.jpg" alt="My Personal Photo">
+                    </div>
+
+                    <div class="right">
+                        <p>
+                            Hi there! I am a first year student at the University of Toronto <strong>specializing in Computer Science and Minoring in Statistics</strong>.
+                        </p>
+
+                        <p>Here are some technologies that I have been working with:</p>
+
+                        <ul class="tech-skills-list">
+                            <li>Python</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+
+                        <a class='view-resume-btn'href="#">View Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience-section">
+            <div class="container">
+                <div class="experience-title">
+                    <h3>Experience</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects-section">
+            <div class="container">
+                <div class="projects-title">
+                    <h3>Projects</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-section">
+            <div class="container">
+
+                <h3>Let's Connect!</h3>
+
+                <div class="icon-container">
+                    <a class="email-icon" href="mailto:edisonliem417@gmail.com">
+                        <ion-icon name="mail"></ion-icon>
+                    </a>
+                    <a class="github-icon" href="https://github.com/edison-lhk">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a class="linkedin-icon" href="https://www.linkedin.com/in/edison-liem-99ba3a235/">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </div>
+
+                <p>© Edison Liem, 2022</p>
+            </div>
+        </section>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>    
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script>
+            
+            const mobileBtn = document.getElementById('mobile-cta')
+                  navbar = document.getElementById('navbar')                 
+                  mobileBtnExit = document.getElementById('mobile-exit');
+
+            mobileBtn.addEventListener('click', () => {
+                navbar.classList.add('open-menu');
+            }) 
+
+            mobileBtnExit.addEventListener('click', () => {
+                navbar.classList.remove('open-menu');
+            })
+
+        </script>
+    </body>
+</html>
