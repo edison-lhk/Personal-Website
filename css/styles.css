@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
-  --navy: #0a192f;
+  --navy: #11294e;
   --darkblue: #0a192f;
+  --pearlgreen: #28854c;
   --lightblue: #007af3;
-  --lighterblue: #006bd6;
+  --lighternavy: #163564;
   --darkgray: #20272e;
   --lightgray: #f2f2f2;
 }
@@ -63,7 +64,8 @@ body {
 }
 
 #hero-section {
-  background-image: url("../images/hero-background.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 100, 100, 0.3)), to(rgba(100, 100, 100, 0.3))), url("../images/hero-background.jpg");
+  background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(100, 100, 100, 0.3)), url("../images/hero-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -85,13 +87,29 @@ body {
           justify-content: center;
 }
 
+#hero-section .container p {
+  font-size: 4vh;
+  color: black;
+}
+
+#hero-section .container h1 {
+  font-size: 5vh;
+  color: black;
+}
+
+#hero-section .container h2 {
+  font-size: 3vh;
+  color: black;
+  margin-bottom: 4vh;
+}
+
 #hero-section .container a {
   text-decoration: none;
 }
 
 #hero-section .container a ion-icon {
   color: white;
-  font-size: 2em;
+  font-size: 5vh;
   margin: auto .2em;
 }
 
@@ -100,7 +118,7 @@ body {
 }
 
 #about-section {
-  background: var(--lightblue);
+  background: var(--navy);
   border: 1px solid transparent;
   color: white;
   text-align: center;
@@ -126,8 +144,8 @@ body {
 }
 
 #about-section .container .about-details {
-  background: var(--lighterblue);
-  margin: 10vh 5vw;
+  background: var(--lighternavy);
+  margin: 10vh 5vw 15vh 5vw;
   padding-bottom: 15vh;
   border-radius: 1em;
 }
@@ -215,7 +233,7 @@ body {
 
 #contact-section .icon-container a ion-icon {
   color: black;
-  font-size: 2em;
+  font-size: 5vh;
   margin: auto .2em;
 }
 
