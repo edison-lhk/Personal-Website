@@ -124,8 +124,8 @@ body {
 
             .left {
                 img {
-                    width: 150px;
-                    height: 170px;
+                    width: 30vw;
+                    height: auto;
                     border-radius: 50%;
                     border: 5px solid lightgray;
                     margin-top: -4.5em;
@@ -145,7 +145,7 @@ body {
                     margin-bottom: 10vh;
                     
                     li {
-                        margin: 0 5vw;
+                        margin: 0 4vw;
                     }
                 } 
 
@@ -243,17 +243,71 @@ body {
                         margin: 0 2em;
     
                         a {
+                            position: relative;
                             text-decoration: none;
                             color: white;
                             font-size: 1.1em;
 
-                            &:hover {
-                                font-weight: bold;
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                background-color: #ff3c78;
+                                width: 100%;
+                                height: 2px;
+                                bottom: -5px;
+                                left: 0;
+                                transform: scaleX(0);
+                                transition: transform 0.35s ease;
+                            }
+    
+                            &:hover::after {
+                                transform: scaleX(1);
                             }
                         }
                     }
                 }
             }
         }     
+    }
+
+    #about-section {
+
+        .container {
+
+            .about-details {
+                background: transparent;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: .5em;
+
+                .left {
+                    img {
+                        width: 20vw;
+                        margin-top: 4em;
+                        margin-left: 10em;
+                        border-radius: 1em;
+                        border: 0px solid transparent;
+                    }
+                }
+
+                .right {
+                    margin-left: 3em;
+                    text-align: left;
+
+                    .tech-skills-list {
+                        display: grid;
+                        grid-template-columns: repeat(2,minmax(150px,10px));
+                        justify-content: left;
+                        padding: 0;
+                    }
+
+                    .view-resume-btn {
+                        margin-left: 5em;
+                    }
+                }
+                
+            }
+        }
     }
 }
