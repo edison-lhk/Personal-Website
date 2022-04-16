@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --navy: #0a192f;
+    --darkblue: #0a192f;
+    --lightblue: #007af3;
+    --lighterblue: #006bd6;
+    --darkgray: #20272e;
+    --lightgray: #f2f2f2;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background: white;
+}
+
+#navbar {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    width: 100%;
+
+    .container {
+        background: var(--navy);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4.5em;
+
+        .logo {
+            display: flex;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin-left: 4vw;
+
+            img {
+                width: 30px;
+                height: 35px;
+            }
+        }
+
+        .mobile-menu {
+            cursor: pointer;
+            margin: 3vh 6vw;
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%)
+        }
+
+        nav {
+            display: none;
+        }
+
+
+    }
+}
+
+#hero-section {
+    //Set Background Image
+    background-image: url("../images/hero-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 100vh;
+
+    .container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+
+        p {
+            
+        }
+
+        h1 {
+            
+        }
+
+        h2 {
+
+        }
+
+        a {
+            text-decoration: none;
+
+            ion-icon {
+                color: white;
+                font-size: 2em;
+                margin: auto .2em;
+
+                &:hover {
+                    color: lightgray;
+                };
+            }
+        }
+    }
+}
+
+#about-section {
+    background: var(--lightblue);
+    border: 1px solid transparent;
+    color: white;
+    text-align: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .about-title {
+            margin-top: 5vh;
+            font-size: 1.5em;
+            letter-spacing: .15em;
+        }
+
+        .about-details {
+            background: var(--lighterblue);
+            margin: 10vh 5vw;
+            padding-bottom: 15vh;
+            border-radius: 1em;
+
+            .left {
+                img {
+                    width: 150px;
+                    height: 170px;
+                    border-radius: 50%;
+                    border: 5px solid lightgray;
+                    margin-top: -4.5em;
+                }
+            }
+
+            .right {
+
+                p {
+                    margin-top: 3vh;
+                }
+
+                .tech-skills-list {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 5vh;
+                    margin-bottom: 10vh;
+                    
+                    li {
+                        margin: 0 5vw;
+                    }
+                } 
+
+                .view-resume-btn {
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                    border: 3px solid white;
+                    border-radius: 3em;
+                    padding: 1em;
+
+                    &:hover {
+                        color: var(--lightblue);
+                        background: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#experience-section {
+    background: var(--darkgray);
+    border: 1px solid transparent;
+    color: white;
+    text-align: center;
+
+    h3 {
+        letter-spacing: .15em;
+        font-size: 1.5em;
+    }
+}
+
+#projects-section {
+    background: var(--darkblue);
+    border: 1px solid transparent;
+    color: white;
+    text-align: center;
+
+    h3 {
+        letter-spacing: .15em;
+        font-size: 1.5em;
+    }
+}
+
+#contact-section {
+    background: var(--lightgray);
+    border: 1px solid transparent;
+    color: black;
+    text-align: center;
+
+    h3 {
+        letter-spacing: .15em;
+        font-size: 1.5em;
+    }
+
+    .icon-container {
+        a {
+            text-decoration: none;
+
+            ion-icon {
+                color: black;
+                font-size: 2em;
+                margin: auto .2em;
+
+                &:hover {
+                    color: var(--darkgray);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    #navbar {
+
+        .container {
+            display: flex;
+
+            .mobile-menu, .mobile-menu-exit {
+                display: none;
+            }
+    
+            nav {
+                display: flex;
+                justify-content: center;
+                margin: auto 30em;
+
+                ul {
+                    display: flex;
+
+                    li {
+                        list-style-type: none;
+                        margin: 0 2em;
+    
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            font-size: 1.1em;
+
+                            &:hover {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }     
+    }
+}
