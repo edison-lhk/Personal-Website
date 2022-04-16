@@ -23,9 +23,10 @@ body {
     top: 0;
     right: 0;
     width: 100%;
+    transition: 200ms ease-in-out background-color;
 
     .container {
-        background: var(--navy);
+        background: transparent;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -219,6 +220,32 @@ body {
     }
 }
 
+#navbar.active-nav {
+    background-color: var(--lightgray);
+
+    .container {
+
+        .logo {
+            color: #0e0e0e;
+        }
+
+        .mobile-menu {
+            filter: brightness(0%);
+        }
+
+        nav {
+            ul 
+            {
+                li {
+                    a {
+                        color: #0e0e0e;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 900px) {
 
     #navbar {
@@ -233,7 +260,7 @@ body {
             nav {
                 display: flex;
                 justify-content: center;
-                margin: auto 30em;
+                margin: auto 35em;
 
                 ul {
                     display: flex;
