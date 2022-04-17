@@ -20,11 +20,11 @@
                     <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Exit Navigation">
 
                     <ul>
-                        <li><a href="#hero-section">Home</a></li>
-                        <li><a href="#about-section">About</a></li>
-                        <li><a href="#experience-section">Experience</a></li>
-                        <li><a href="#projects-section">Projects</a></li>
-                        <li><a href="#contact-section">Contact</a></li>
+                        <li><a id="home-btn" href="#hero-section">Home</a></li>
+                        <li><a id="about-btn" href="#about-section">About</a></li>
+                        <li><a id="experience-btn" href="#experience-section">Experience</a></li>
+                        <li><a id="projects-btn" href="#projects-section">Projects</a></li>
+                        <li><a id="contact-btn" href="#contact-section">Contact</a></li>
                     </ul>
 
                 </nav>
@@ -123,7 +123,12 @@
         <script>
             const navbar = document.getElementById('navbar');
                   menuBtn = document.getElementById('mobile-cta')
-                  menuBtnExit = document.getElementById('mobile-exit');
+                  menuBtnExit = document.getElementById('mobile-exit')
+                  homeBtn = document.getElementById('home-btn')
+                  aboutBtn = document.getElementById('about-btn')
+                  experienceBtn = document.getElementById('experience-btn')
+                  projectsBtn = document.getElementById('projects-btn')
+                  contactBtn = document.getElementById('contact-btn');
             
             window.addEventListener('scroll', () => {
                 if (window.scrollY >=40) {
@@ -138,6 +143,26 @@
             })
 
             menuBtnExit.addEventListener('click', () => {
+                navbar.classList.remove('open-menu');
+            })
+            
+            homeBtn.addEventListener('click', () => {
+                navbar.classList.remove('open-menu');
+            })
+
+            aboutBtn.addEventListener('click', () => {
+                navbar.classList.remove('open-menu');
+            })
+
+            experienceBtn.addEventListener('click', () => {
+                navbar.classList.remove('open-menu');
+            })
+
+            projectsBtn.addEventListener('click', () => {
+                navbar.classList.remove('open-menu');
+            })
+
+            contactBtn.addEventListener('click', () => {
                 navbar.classList.remove('open-menu');
             })
         </script>

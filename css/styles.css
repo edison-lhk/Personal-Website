@@ -166,6 +166,7 @@ body {
           justify-content: center;
   margin-top: 5vh;
   margin-bottom: 10vh;
+  margin-right: 3vw;
 }
 
 #about-section .container .about-details .right .tech-skills-list li {
