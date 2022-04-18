@@ -93,7 +93,7 @@ body {
 
 #navbar .container nav ul li {
   list-style-type: none;
-  margin: 4vh 7vw 4vh 1vw;
+  margin: 4vh 3em 4vh 0vw;
 }
 
 #navbar .container nav ul li a {
@@ -247,6 +247,8 @@ body {
 #about-section .container .about-details .right .view-resume-btn:hover {
   color: var(--navy);
   background: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #experience-section {
@@ -301,6 +303,8 @@ body {
 
 #navbar.active-nav {
   background-color: var(--lightgray);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 #navbar.active-nav .container .logo {
@@ -394,7 +398,6 @@ body {
             transform: scaleX(1);
   }
   #about-section .container .about-details {
-    background: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -406,14 +409,14 @@ body {
     margin-top: .5em;
   }
   #about-section .container .about-details .left img {
-    width: 20vw;
-    margin-top: 4em;
-    margin-left: 10em;
+    width: 18em;
+    margin-top: 3vh;
+    margin-left: 7vw;
     border-radius: 1em;
     border: 0px solid transparent;
   }
   #about-section .container .about-details .right {
-    margin-left: 3em;
+    margin-left: 6vw;
     text-align: left;
   }
   #about-section .container .about-details .right .tech-skills-list {

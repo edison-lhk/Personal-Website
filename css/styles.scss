@@ -73,7 +73,7 @@ body {
 
                 li {
                     list-style-type: none;
-                    margin: 4vh 7vw 4vh 1vw;
+                    margin: 4vh 3em 4vh 0vw;
         
                     a {
                         position: relative;
@@ -208,6 +208,7 @@ body {
                     &:hover {
                         color: var(--navy);
                         background: white;
+                        transition: all 0.5s;
                     }
                 }
             }
@@ -269,6 +270,7 @@ body {
 
 #navbar.active-nav {
     background-color: var(--lightgray);
+    transition: all 0.3s;
 
     .container {
 
@@ -373,7 +375,7 @@ body {
         .container {
 
             .about-details {
-                background: transparent;
+                //background: transparent;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
@@ -381,16 +383,16 @@ body {
 
                 .left {
                     img {
-                        width: 20vw;
-                        margin-top: 4em;
-                        margin-left: 10em;
+                        width: 18em;
+                        margin-top: 3vh;
+                        margin-left: 7vw;
                         border-radius: 1em;
                         border: 0px solid transparent;
                     }
                 }
 
                 .right {
-                    margin-left: 3em;
+                    margin-left: 6vw;
                     text-align: left;
 
                     .tech-skills-list {
