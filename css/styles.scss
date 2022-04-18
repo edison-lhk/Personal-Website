@@ -11,6 +11,10 @@
     --pink: #ff3c78;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     margin: 0;
