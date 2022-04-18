@@ -63,6 +63,8 @@ body {
   right: 0;
   z-index: 999;
   background: var(--lightgray);
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
@@ -330,8 +332,6 @@ body {
 }
 
 #navbar.open-menu .container nav {
-  -webkit-transition: all 0.45s;
-  transition: all 0.45s;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }

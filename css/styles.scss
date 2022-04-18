@@ -54,6 +54,7 @@ body {
             right: 0;
             z-index: 999;
             background: var(--lightgray);
+            transition: all 0.45s;
             transform: translateX(-100%);
 
             .mobile-menu-exit {
@@ -306,7 +307,6 @@ body {
         }
         
         nav {
-            transition: all 0.45s;
             transform: translateX(0);
         }
     }
