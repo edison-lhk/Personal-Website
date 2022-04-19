@@ -3,12 +3,13 @@
 :root {
     --navy: #11294e;
     --darkblue: #0a192f;
-    --pearlgreen: #28854c;
+    --emeraldgreen: #00ba9b;
     --lightblue: #007af3;
     --lighternavy: #163564;
     --darkgray: #20272e;
     --lightgray: #f2f2f2;
     --pink: #ff3c78;
+    --criminson: #dc143c;
 }
 
 html {
@@ -41,6 +42,11 @@ body {
             text-decoration: none;
             font-size: 1.5em;
             margin-left: 4vw;
+            font-weight: bold;
+
+            span {
+                color: var(--emeraldgreen);
+            }
         }
 
         .mobile-menu {
@@ -132,6 +138,14 @@ body {
             font-size: 3vh;
             color: white;
             margin-bottom: 4vh;
+
+            .soft-eng-text {
+                color: white;
+            }
+
+            .data-sci-text {
+                color: white;
+            }
         }
 
         a {
@@ -222,7 +236,7 @@ body {
 }
 
 #experience-section {
-    background: var(--darkgray);
+    background: #1a1a1d;
     border: 1px solid transparent;
     color: white;
     text-align: center;
@@ -281,6 +295,10 @@ body {
 
         .logo {
             color: #0e0e0e;
+
+            span {
+                color: var(--criminson);
+            }
         }
 
         .mobile-menu {
@@ -379,7 +397,6 @@ body {
         .container {
 
             .about-details {
-                //background: transparent;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
@@ -388,8 +405,8 @@ body {
                 .left {
                     img {
                         width: 18em;
-                        margin-top: 3vh;
                         margin-left: 7vw;
+                        margin-top: -2em;
                         border-radius: 1em;
                         border: 0px solid transparent;
                     }
@@ -397,6 +414,7 @@ body {
 
                 .right {
                     margin-left: 6vw;
+                    margin-right: 4vw;
                     text-align: left;
 
                     .tech-skills-list {
@@ -407,10 +425,29 @@ body {
                     }
 
                     .view-resume-btn {
-                        margin-left: 5em;
+                        margin-left: 5.5em;
                     }
                 }
                 
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 985px) {
+
+    #about-section {
+
+        .container {
+
+            .about-details {
+
+                .left {
+
+                    img {
+                        margin-top: 1.5em;
+                    }
+                }
             }
         }
     }
