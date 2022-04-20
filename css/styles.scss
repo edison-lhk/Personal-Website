@@ -180,11 +180,23 @@ body {
             font-size: 1.5em;
             letter-spacing: .15em;
             position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                background: var(--lightgray);
+                width: 80px;
+                height: 3px;
+                left: 50%;
+                bottom: 15px;
+                transform: translateX(-50%);
+            }
         }
 
         .about-details {
             background: var(--lighternavy);
-            margin: 10vh 5vw 15vh 5vw;
+            margin: 15vh 5vw;
             padding-bottom: 15vh;
             border-radius: 1em;
 

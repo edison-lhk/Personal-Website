@@ -51,10 +51,17 @@ window.addEventListener('resize', () => {
 })
 
 window.addEventListener('scroll', () => {
-    console.log(window.scrollY);
-    if (window.scrollY >= 1140 && window.scrollY<=2000) {
-        skillsSection.classList.add('active-section');
+    if (window.innerWidth <= 900) {
+        if (window.scrollY >= 1530 && window.scrollY <= 2400) {
+            skillsSection.classList.add('active-section');
+        } else {
+            skillsSection.classList.remove('active-section');
+        }
     } else {
-        skillsSection.classList.remove('active-section');
+        if (window.scrollY >= 1140 && window.scrollY<=2200) {
+            skillsSection.classList.add('active-section');
+        } else {
+            skillsSection.classList.remove('active-section');
+        }
     }
 })
