@@ -5,7 +5,7 @@
   --emeraldgreen: #00ba9b;
   --lightblue: #007af3;
   --lighternavy: #163564;
-  --darkgray: #20272e;
+  --darkgray: #111;
   --lightgray: #f2f2f2;
   --pink: #ff3c78;
   --criminson: #dc143c;
@@ -217,6 +217,7 @@ body {
   margin-top: 5vh;
   font-size: 1.5em;
   letter-spacing: .15em;
+  position: relative;
 }
 
 #about-section .container .about-details {
@@ -234,25 +235,17 @@ body {
   margin-top: -4.5em;
 }
 
+#about-section .container .about-details .right {
+  margin: auto 7vw;
+}
+
 #about-section .container .about-details .right p {
   margin-top: 3vh;
   line-height: 2em;
 }
 
-#about-section .container .about-details .right .tech-skills-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 5vh;
-  margin-bottom: 10vh;
-  margin-right: 3vw;
-}
-
-#about-section .container .about-details .right .tech-skills-list li {
-  margin: 0 4vw;
+#about-section .container .about-details .right .reach-out-text {
+  margin-bottom: 4em;
 }
 
 #about-section .container .about-details .right .view-resume-btn {
@@ -271,16 +264,32 @@ body {
   transition: all 0.5s;
 }
 
-#experience-section {
-  background: #1a1a1d;
+#skills-section {
+  background: var(--darkgray);
   border: 1px solid transparent;
   color: white;
   text-align: center;
 }
 
-#experience-section h3 {
-  letter-spacing: .15em;
+#skills-section h3 {
+  margin-top: 5vh;
   font-size: 1.5em;
+  letter-spacing: .15em;
+  position: relative;
+}
+
+#experience-section {
+  background: var(--lightgray);
+  border: 1px solid transparent;
+  color: black;
+  text-align: center;
+}
+
+#experience-section h3 {
+  margin-top: 5vh;
+  font-size: 1.5em;
+  letter-spacing: .15em;
+  position: relative;
 }
 
 #projects-section {
@@ -291,8 +300,10 @@ body {
 }
 
 #projects-section h3 {
-  letter-spacing: .15em;
+  margin-top: 5vh;
   font-size: 1.5em;
+  letter-spacing: .15em;
+  position: relative;
 }
 
 #contact-section {
@@ -303,8 +314,9 @@ body {
 }
 
 #contact-section h3 {
-  letter-spacing: .15em;
   font-size: 1.5em;
+  letter-spacing: .15em;
+  position: relative;
 }
 
 #contact-section .icon-container a {
@@ -318,7 +330,7 @@ body {
 }
 
 #contact-section .icon-container a ion-icon:hover {
-  color: var(--darkgray);
+  color: #393939;
 }
 
 #navbar.active-nav {
@@ -344,6 +356,10 @@ body {
   color: #0e0e0e;
 }
 
+#navbar.active-nav .container nav ul li a::after {
+  background: var(--pink);
+}
+
 #navbar.open-menu {
   background: transparent;
   position: absolute;
@@ -356,6 +372,12 @@ body {
 #navbar.open-menu .container nav {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+@media only screen and (min-width: 435px) {
+  #about-section .container .right p {
+    text-align: justify;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -403,7 +425,7 @@ body {
   #navbar .container nav ul li a:after {
     content: '';
     position: absolute;
-    background-color: var(--pink);
+    background: var(--pink);
     width: 100%;
     height: 2px;
     bottom: -5px;
@@ -419,6 +441,12 @@ body {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
   }
+  #navbar.active-nav .container nav ul li a::after {
+    background: var(--emeraldgreen);
+  }
+}
+
+@media only screen and (min-width: 1250px) {
   #about-section .container .about-details {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -428,38 +456,22 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: .5em;
+    margin-top: 2.5em;
+    padding-bottom: 2em;
   }
   #about-section .container .about-details .left img {
     width: 18em;
     margin-left: 7vw;
-    margin-top: -2em;
+    margin-top: -1em;
     border-radius: 1em;
     border: 0px solid transparent;
   }
   #about-section .container .about-details .right {
-    margin-left: 6vw;
-    margin-right: 4vw;
-    text-align: left;
-  }
-  #about-section .container .about-details .right .tech-skills-list {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(150px, 10px))[2];
-        grid-template-columns: repeat(2, minmax(150px, 10px));
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    padding: 0;
+    margin: 5vh 6vw;
+    text-align: justify;
   }
   #about-section .container .about-details .right .view-resume-btn {
     margin-left: 5.5em;
-  }
-}
-
-@media only screen and (min-width: 985px) {
-  #about-section .container .about-details .left img {
-    margin-top: 1.5em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
