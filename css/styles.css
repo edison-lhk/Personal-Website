@@ -268,14 +268,173 @@ body {
   background: var(--darkgray);
   border: 1px solid transparent;
   color: white;
+}
+
+#skills-section .container .skills-title {
+  margin-top: 9vh;
+  letter-spacing: .15em;
+  position: relative;
   text-align: center;
 }
 
-#skills-section h3 {
-  margin-top: 5vh;
+#skills-section .container .skills-title h3 {
   font-size: 1.5em;
-  letter-spacing: .15em;
-  position: relative;
+}
+
+#skills-section .container .skills-title h3 span {
+  color: var(--emeraldgreen);
+}
+
+#skills-section .container .skills-title h3::after {
+  content: '';
+  position: absolute;
+  background-color: var(--lightgray);
+  display: block;
+  width: 80px;
+  height: 3px;
+  left: 50%;
+  top: 50px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#skills-section .container .skills-title p {
+  margin-top: 50px;
+  font-size: 15px;
+}
+
+#skills-section .container .skills-details {
+  width: 80vw;
+  margin: 10vh 8vw 20vh 8vw;
+}
+
+#skills-section .container .skills-details .skills-bar {
+  margin: 5vh auto;
+}
+
+#skills-section .container .skills-details .skills-bar .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+}
+
+#skills-section .container .skills-details .skills-bar .info .percent {
+  font-weight: bold;
+}
+
+#skills-section .container .skills-details .skills-bar .bar {
+  width: 100%;
+  height: 10px;
+  background: gray;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+#skills-section .container .skills-details .skills-bar .bar span {
+  height: 100%;
+  border-radius: 10px;
+  background: var(--emeraldgreen);
+  float: left;
+}
+
+#skills-section.active-section .container .skills-details .skills-bar .bar .python {
+  width: 95%;
+  -webkit-animation: python 2s;
+          animation: python 2s;
+}
+
+@-webkit-keyframes python {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+@keyframes python {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+#skills-section.active-section .container .skills-details .skills-bar .bar .html {
+  width: 90%;
+  -webkit-animation: html 2s;
+          animation: html 2s;
+}
+
+@-webkit-keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+#skills-section.active-section .container .skills-details .skills-bar .bar .css {
+  width: 85%;
+  -webkit-animation: css 2s;
+          animation: css 2s;
+}
+
+@-webkit-keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+#skills-section.active-section .container .skills-details .skills-bar .bar .javascript {
+  width: 80%;
+  -webkit-animation: javascipt 2s;
+          animation: javascipt 2s;
+}
+
+@-webkit-keyframes javascipt {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes javascipt {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
 }
 
 #experience-section {
@@ -343,10 +502,6 @@ body {
   color: #0e0e0e;
 }
 
-#navbar.active-nav .container .logo span {
-  color: var(--criminson);
-}
-
 #navbar.active-nav .container .mobile-menu {
   -webkit-filter: brightness(0%);
           filter: brightness(0%);
@@ -354,10 +509,6 @@ body {
 
 #navbar.active-nav .container nav ul li a {
   color: #0e0e0e;
-}
-
-#navbar.active-nav .container nav ul li a::after {
-  background: var(--pink);
 }
 
 #navbar.open-menu {
@@ -422,27 +573,19 @@ body {
     color: white;
     font-size: 1.1em;
   }
-  #navbar .container nav ul li a:after {
-    content: '';
-    position: absolute;
-    background: var(--pink);
-    width: 100%;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    -webkit-transition: -webkit-transform 0.35s ease;
-    transition: -webkit-transform 0.35s ease;
-    transition: transform 0.35s ease;
-    transition: transform 0.35s ease, -webkit-transform 0.35s ease;
-  }
-  #navbar .container nav ul li a:hover::after {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
   #navbar.active-nav .container nav ul li a::after {
-    background: var(--emeraldgreen);
+    background: var(--pink);
+  }
+  #skills-section .container .skills-details {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (35vw)[2];
+        grid-template-columns: repeat(2, 35vw);
+    grid-column-gap: 13vw;
+  }
+  #skills-section .container .skills-details .skills-bar {
+    margin: 5vh 0;
   }
 }
 

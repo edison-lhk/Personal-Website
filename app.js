@@ -6,6 +6,7 @@ const navbar = document.getElementById('navbar'),
       skillsBtn = document.getElementById('skills-btn');
       experienceBtn = document.getElementById('experience-btn'),
       projectsBtn = document.getElementById('projects-btn'),
+      skillsSection = document.getElementById('skills-section');
             
 window.addEventListener('scroll', () => {
     if (window.scrollY >=40) {
@@ -46,5 +47,14 @@ projectsBtn.addEventListener('click', () => {
 window.addEventListener('resize', () => {
     if (window.innerWidth >= 900) {
         navbar.classList.remove('open-menu');
+    }
+})
+
+window.addEventListener('scroll', () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 1140 && window.scrollY<=2000) {
+        skillsSection.classList.add('active-section');
+    } else {
+        skillsSection.classList.remove('active-section');
     }
 })
