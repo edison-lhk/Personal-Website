@@ -589,6 +589,9 @@ body {
   #navbar.active-nav .container nav ul li a::after {
     background: var(--pink);
   }
+  #skills-section {
+    height: 100vh;
+  }
   #skills-section .container .skills-details {
     width: 100%;
     display: -ms-grid;

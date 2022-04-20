@@ -52,7 +52,7 @@ window.addEventListener('resize', () => {
 
 window.addEventListener('scroll', () => {
     if (window.innerWidth <= 900) {
-        if (window.scrollY >= 1530 && window.scrollY <= 2400) {
+        if (window.scrollY >= 1530 && window.scrollY <= 2500) {
             skillsSection.classList.add('active-section');
         } else {
             skillsSection.classList.remove('active-section');
