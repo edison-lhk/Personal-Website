@@ -1,11 +1,7 @@
 const navbar = document.getElementById('navbar'),
       menuBtn = document.getElementById('mobile-cta'),
       menuBtnExit = document.getElementById('mobile-exit'),
-      homeBtn = document.getElementById('home-btn'),
-      aboutBtn = document.getElementById('about-btn'),
-      skillsBtn = document.getElementById('skills-btn');
-      experienceBtn = document.getElementById('experience-btn'),
-      projectsBtn = document.getElementById('projects-btn'),
+      navBtns = document.querySelectorAll('.nav-btn');
       skillsSection = document.getElementById('skills-section');
             
 window.addEventListener('scroll', () => {
@@ -23,25 +19,11 @@ menuBtn.addEventListener('click', () => {
 menuBtnExit.addEventListener('click', () => {
     navbar.classList.remove('open-menu');
 })
-            
-homeBtn.addEventListener('click', () => {
-    navbar.classList.remove('open-menu');
-})
 
-aboutBtn.addEventListener('click', () => {
-    navbar.classList.remove('open-menu');
-})
-
-skillsBtn.addEventListener('click', () => {
-    navbar.classList.remove('open-menu');
-})
-
-experienceBtn.addEventListener('click', () => {
-    navbar.classList.remove('open-menu');
-})
-
-projectsBtn.addEventListener('click', () => {
-    navbar.classList.remove('open-menu');
+navBtns.forEach((navBtn) => {
+    navBtn.addEventListener('click', () => {
+        navbar.classList.remove('open-menu');
+    })
 })
 
 window.addEventListener('resize', () => {
