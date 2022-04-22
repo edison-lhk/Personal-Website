@@ -1,6 +1,6 @@
 # Welcome to My Personal Website :rocket:
 
-I am building this portfolio website not only to showcase my experience, skills and projects, but also demonstrating the web development skills that I have recently learnt.
+I am building this portfolio website not only to showcase my experience, skills and projects, but also to demonstrate the web development skills that I have recently learnt.
 
 ## Languages and Tools:
 
