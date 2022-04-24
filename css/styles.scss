@@ -120,7 +120,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-attachment: fixed;
     height: 100vh;
 
     .container {
@@ -558,6 +557,8 @@ body {
             }
         }
     }
+
+    #hero-section {background-attachment: fixed;}
 
     #skills-section {
         height: 100vh;
