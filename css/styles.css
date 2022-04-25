@@ -142,7 +142,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  height: 100vh;
 }
 
 #hero-section .container {
@@ -469,6 +468,13 @@ body {
   border: 1px solid transparent;
   color: white;
   text-align: center;
+}
+
+#projects-section #particles-js {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 #projects-section h3 {
