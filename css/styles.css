@@ -43,13 +43,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 4.5em;
+  height: 72px;
 }
 
 #navbar .container .logo {
   color: white;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 24px;
   margin-left: 4vw;
   font-weight: bold;
 }
@@ -83,7 +83,7 @@ body {
 #navbar .container nav .mobile-menu-exit {
   float: right;
   cursor: pointer;
-  margin: 2em 2em;
+  margin: 32px;
   -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
           filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
@@ -106,12 +106,12 @@ body {
 
 #navbar .container nav ul li {
   list-style-type: none;
-  margin: 4vh 3em 4vh 0vw;
+  margin: 4vh 48px 4vh 0vw;
 }
 
 #navbar .container nav ul li a {
   position: relative;
-  font-size: 1.5em;
+  font-size: 24px;
   color: #0e0e0e;
   text-decoration: none;
 }
@@ -186,7 +186,7 @@ body {
 #hero-section .container a ion-icon {
   color: white;
   font-size: 5vh;
-  margin: .2em;
+  margin: 7.89px;
 }
 
 #hero-section .container a ion-icon:hover {
@@ -215,8 +215,8 @@ body {
 
 #about-section .container .about-title {
   margin-top: 5vh;
-  font-size: 1.5em;
-  letter-spacing: .15em;
+  font-size: 24px;
+  letter-spacing: 3.6px;
   position: relative;
 }
 
@@ -237,7 +237,7 @@ body {
   background: var(--lighternavy);
   margin: 15vh 5vw;
   padding-bottom: 15vh;
-  border-radius: 1em;
+  border-radius: 16px;
 }
 
 #about-section .container .about-details .left img {
@@ -245,7 +245,7 @@ body {
   height: auto;
   border-radius: 50%;
   border: 5px solid lightgray;
-  margin-top: -4.5em;
+  margin-top: -72px;
 }
 
 #about-section .container .about-details .right {
@@ -254,11 +254,11 @@ body {
 
 #about-section .container .about-details .right p {
   margin-top: 3vh;
-  line-height: 2em;
+  line-height: 32px;
 }
 
 #about-section .container .about-details .right .reach-out-text {
-  margin-bottom: 4em;
+  margin-bottom: 64px;
 }
 
 #about-section .container .about-details .right .view-resume-btn {
@@ -266,8 +266,8 @@ body {
   color: white;
   font-weight: bold;
   border: 3px solid white;
-  border-radius: 3em;
-  padding: 1em;
+  border-radius: 48px;
+  padding: 16px;
 }
 
 #about-section .container .about-details .right .view-resume-btn:hover {
@@ -285,13 +285,13 @@ body {
 
 #skills-section .container .skills-title {
   margin-top: 9vh;
-  letter-spacing: .15em;
+  letter-spacing: 2.4px;
   position: relative;
   text-align: center;
 }
 
 #skills-section .container .skills-title h3 {
-  font-size: 1.5em;
+  font-size: 24px;
 }
 
 #skills-section .container .skills-title h3 span {
@@ -459,8 +459,8 @@ body {
 
 #experience-section h3 {
   margin-top: 5vh;
-  font-size: 1.5em;
-  letter-spacing: .15em;
+  font-size: 24px;
+  letter-spacing: 3.6px;
   position: relative;
 }
 
@@ -480,8 +480,8 @@ body {
 
 #projects-section h3 {
   margin-top: 5vh;
-  font-size: 1.5em;
-  letter-spacing: .15em;
+  font-size: 24px;
+  letter-spacing: 3.6px;
   position: relative;
 }
 
@@ -493,8 +493,8 @@ body {
 }
 
 #contact-section h3 {
-  font-size: 1.5em;
-  letter-spacing: .15em;
+  font-size: 24px;
+  letter-spacing: 3.6px;
   position: relative;
 }
 
@@ -505,7 +505,7 @@ body {
 #contact-section .icon-container a ion-icon {
   color: black;
   font-size: 5vh;
-  margin: auto .2em;
+  margin: auto 7.89px;
 }
 
 #contact-section .icon-container a ion-icon:hover {
@@ -565,16 +565,16 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: auto 25em;
+    margin: auto 400px;
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
-    height: 4.4em;
+    height: 70.4px;
     width: 45em;
   }
   #navbar .container nav ul {
-    padding-top: 0.1em;
+    padding-top: 1.6px;
     margin: 0;
-    height: 4.3em;
+    height: 68.8px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -585,13 +585,13 @@ body {
   }
   #navbar .container nav ul li {
     list-style-type: none;
-    margin: 0 2em;
+    margin: 0 32px;
   }
   #navbar .container nav ul li a {
     position: relative;
     text-decoration: none;
     color: white;
-    font-size: 1.1em;
+    font-size: 17.6px;
   }
   #navbar.active-nav .container nav ul li a::after {
     background: var(--pink);
@@ -625,14 +625,14 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 2.5em;
-    padding-bottom: 2em;
+    margin-top: 40px;
+    padding-bottom: 32px;
   }
   #about-section .container .about-details .left img {
-    width: 18em;
+    width: 288px;
     margin-left: 7vw;
-    margin-top: -1em;
-    border-radius: 1em;
+    margin-top: -16px;
+    border-radius: 16px;
     border: 0px solid transparent;
   }
   #about-section .container .about-details .right {
