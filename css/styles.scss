@@ -69,8 +69,8 @@ body {
             right: 0;
             z-index: 999;
             background: var(--lightgray);
-            transition: all 0.45s;
             transform: translateX(-100%);
+            transition: all 0.45s;
 
             .mobile-menu-exit {
                 float: right;
@@ -203,6 +203,7 @@ body {
             margin: 15vh 5vw;
             padding-bottom: 15vh;
             border-radius: 16px;
+            justify-content: center;
 
             .left {
                 img {
@@ -218,8 +219,11 @@ body {
                 margin: auto 7vw;
 
                 p {
+                    text-align: left;
+                    font-size: Min(16px, 3.5vw);
                     margin-top: 3vh;
-                    line-height: 32px;
+                    line-height: Min(32px, 6vw);
+                    margin-left: 10px;
                 }
 
                 .reach-out-text {

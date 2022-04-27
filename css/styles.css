@@ -78,10 +78,10 @@ body {
   right: 0;
   z-index: 999;
   background: var(--lightgray);
-  -webkit-transition: all 0.45s;
-  transition: all 0.45s;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
 }
 
 #navbar .container nav .mobile-menu-exit {
@@ -242,6 +242,9 @@ body {
   margin: 15vh 5vw;
   padding-bottom: 15vh;
   border-radius: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #about-section .container .about-details .left img {
@@ -257,8 +260,11 @@ body {
 }
 
 #about-section .container .about-details .right p {
+  text-align: left;
+  font-size: Min(16px, 3.5vw);
   margin-top: 3vh;
-  line-height: 32px;
+  line-height: Min(32px, 6vw);
+  margin-left: 10px;
 }
 
 #about-section .container .about-details .right .reach-out-text {
