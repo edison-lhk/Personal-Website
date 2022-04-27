@@ -473,13 +473,15 @@ body {
   border: 1px solid transparent;
   color: white;
   text-align: center;
+  position: relative;
 }
 
 #projects-section #particles-js {
   z-index: 0;
   position: absolute;
   width: 100%;
-  height: 95px;
+  top: 10px;
+  bottom: 10px;
 }
 
 #projects-section h3 {
