@@ -241,7 +241,7 @@ body {
 }
 
 #about-section .container .about-details .left img {
-  width: 30vw;
+  width: Min(200px, 40vw);
   height: auto;
   border-radius: 50%;
   border: 5px solid lightgray;
