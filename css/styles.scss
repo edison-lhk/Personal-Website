@@ -503,17 +503,8 @@ body {
 
 @media only screen and (min-width: 435px) {
 
-    #about-section {
-
-        .container {
-
-            .right {
-
-                p {
-                    text-align: justify;
-                }
-            }
-        }
+    #about-section .container .about-details .right p{
+        text-align: justify;
     }
 }
 
