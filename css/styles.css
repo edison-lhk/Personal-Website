@@ -245,7 +245,7 @@ body {
   height: auto;
   border-radius: 50%;
   border: 5px solid lightgray;
-  margin-top: -72px;
+  margin-top: Max(-72px, -12vh);
 }
 
 #about-section .container .about-details .right {
