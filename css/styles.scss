@@ -513,7 +513,6 @@ body {
     #navbar {
 
         .container {
-            display: flex;
 
             .mobile-menu, .mobile-menu-exit {
                 display: none;
@@ -521,7 +520,6 @@ body {
     
             nav {
                 background: none;
-                display: flex;
                 margin: auto 400px;
                 transform: translateX(50%);
                 height: 70.4px;
@@ -531,6 +529,7 @@ body {
                     padding-top: 1.6px;
                     margin: 0;
                     height: 68.8px;
+                    display: flex;
                     flex-direction: row;
                     justify-content: center;
 
@@ -548,22 +547,6 @@ body {
                 }
             }
         }    
-    }
-
-    #navbar.active-nav {
-        .container {
-            nav {
-                ul {
-                    li {
-                        a {
-                            &::after {
-                                background: var(--pink);
-                            }
-                        }
-                    }
-                }
-            }
-        }
     }
 
     #hero-section {background-attachment: fixed;}
