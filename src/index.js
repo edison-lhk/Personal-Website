@@ -1,7 +1,10 @@
+import * as particles from 'particles.js/particles';
+import * as particlesApp from 'particles.js/demo/js/app';
+
 const navbar = document.getElementById('navbar'),
       menuBtn = document.getElementById('mobile-cta'),
       menuBtnExit = document.getElementById('mobile-exit'),
-      navBtns = document.querySelectorAll('.nav-btn');
+      navBtns = document.querySelectorAll('.nav-btn'),
       skillsSection = document.getElementById('skills-section');
             
 window.addEventListener('scroll', () => {
@@ -47,3 +50,4 @@ window.addEventListener('scroll', () => {
         }
     }
 })
+

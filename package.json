@@ -1,0 +1,26 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "I am building this portfolio website not only to showcase my experience, skills and projects, but also to demonstrate the web development skills that I have recently learnt.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edison-lhk/Personal-Website.git"
+  },
+  "author": "Edison Liem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edison-lhk/Personal-Website/issues"
+  },
+  "homepage": "https://github.com/edison-lhk/Personal-Website#readme",
+  "dependencies": {
+    "particles.js": "^2.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
