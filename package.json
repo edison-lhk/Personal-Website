@@ -4,7 +4,8 @@
   "description": "I am building this portfolio website not only to showcase my experience, skills and projects, but also to demonstrate the web development skills that I have recently learnt.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",

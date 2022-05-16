@@ -3,8 +3,9 @@ import * as particlesApp from 'particles.js/demo/js/app';
 
 const navbar = document.getElementById('navbar'),
       menuBtn = document.getElementById('mobile-cta'),
+      sideMenu = document.querySelector('.side-menu'),
       menuBtnExit = document.getElementById('mobile-exit'),
-      navBtns = document.querySelectorAll('.nav-btn'),
+      sideMenuBtns = document.querySelectorAll('.side-menu-btn'),
       skillsSection = document.getElementById('skills-section');
             
 window.addEventListener('scroll', () => {
@@ -16,22 +17,22 @@ window.addEventListener('scroll', () => {
 })
 
 menuBtn.addEventListener('click', () => {
-    navbar.classList.add('open-menu');
+    sideMenu.classList.add('open-menu');
 })
 
 menuBtnExit.addEventListener('click', () => {
-    navbar.classList.remove('open-menu');
+    sideMenu.classList.remove('open-menu');
 })
 
-navBtns.forEach((navBtn) => {
-    navBtn.addEventListener('click', () => {
-        navbar.classList.remove('open-menu');
+sideMenuBtns.forEach((sideMenuBtn) => {
+    sideMenuBtn.addEventListener('click', () => {
+        sideMenu.classList.remove('open-menu');
     })
 })
 
 window.addEventListener('resize', () => {
     if (window.innerWidth >= 900) {
-        navbar.classList.remove('open-menu');
+        sideMenu.classList.remove('open-menu');
     }
 })
 
