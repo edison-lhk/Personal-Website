@@ -517,6 +517,7 @@ body {
                         display: flex;
                         flex-direction: column;
                         position: relative;
+                        cursor: pointer;
     
                         img {
                             height: 200px;
@@ -526,7 +527,6 @@ body {
 
                         .github-icon {
                             text-decoration: none;
-                            cursor: pointer;
                             z-index: 15;
                             position: absolute;
                             top: 45%;
@@ -547,7 +547,6 @@ body {
 
                         .website-icon {
                             text-decoration: none;
-                            cursor: pointer;
                             z-index: 15;
                             position: absolute;
                             top: 46.5%;

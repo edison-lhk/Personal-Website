@@ -614,6 +614,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  cursor: pointer;
 }
 
 #projects-section .container .projects-details .project-cards-container .project-card .project-image img {
@@ -624,7 +625,6 @@ body {
 
 #projects-section .container .projects-details .project-cards-container .project-card .project-image .github-icon {
   text-decoration: none;
-  cursor: pointer;
   z-index: 15;
   position: absolute;
   top: 45%;
@@ -647,7 +647,6 @@ body {
 
 #projects-section .container .projects-details .project-cards-container .project-card .project-image .website-icon {
   text-decoration: none;
-  cursor: pointer;
   z-index: 15;
   position: absolute;
   top: 46.5%;
