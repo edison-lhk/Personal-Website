@@ -585,7 +585,7 @@ body {
 }
 
 #projects-section .container .projects-details .project-cards-container {
-  width: 870px;
+  width: 1200px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(340px, 1fr))[auto-fit];
